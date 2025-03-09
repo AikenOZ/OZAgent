@@ -12,6 +12,9 @@ from typing import Dict, Any, List, Optional
 from dotenv import load_dotenv
 from google.generativeai import GenerativeModel, configure
 
+# Импорт контроллера памяти
+from memory.mem_control import MemoryController
+
 # Получение логгера
 logger = logging.getLogger("GeminiConsole")
 
@@ -37,7 +40,10 @@ class GeminiConsole:
         # Используем модель gemini-2.0-flash
         self.model = GenerativeModel('gemini-2.0-flash')
         self.img_res = 1080
-        self.conversation_history = []
+        
+        # Инициализация контроллера памяти
+        self.memory = MemoryController()
+        
         self.screenshot_queue = []  # Очередь для хранения скриншотов
         logger.info("Консоль Gemini инициализирована с моделью gemini-2.0-flash")
         
@@ -91,12 +97,17 @@ class GeminiConsole:
             str: Ответ от Gemini
         """
         try:
-            # Добавление сообщения в историю
-            self.conversation_history.append({"role": "user", "content": message})
+            # Добавление сообщения пользователя в память
+            self.memory.add_user_message(message)
             
             # Формирование контента для запроса
             content = []
-            if message:
+            
+            # Добавляем контекст из предыдущих сообщений, если они есть
+            if self.memory.get_message_count() > 1:
+                context = f"Ниже приведена история нашего разговора. Используй её для контекста при формировании ответа:\n\n{self.memory.format_history_for_context()}\n\nТекущий вопрос пользователя: {message}. ФОРМИРУЙ ОТВЕТ БЕЗ ТЕГОВ, НУЖЕН ЧИСТЫЙ ТЕКСТ ДЛЯ ВЫВОДА В CMD"
+                content.append(context)
+            else:
                 content.append(message)
             
             # Добавляем все скриншоты из очереди
@@ -115,11 +126,24 @@ class GeminiConsole:
             # Получение ответа
             response_text = response.text
             
-            # Добавление ответа в историю
-            self.conversation_history.append({"role": "assistant", "content": response_text})
+            # Добавление ответа в память
+            self.memory.add_assistant_message(response_text)
             
             return response_text
             
         except Exception as e:
             logger.error(f"Ошибка при отправке сообщения: {e}")
-            return f"Произошла ошибка: {str(e)}"
+            error_message = f"Произошла ошибка: {str(e)}"
+            
+            # Добавляем сообщение об ошибке в память
+            self.memory.add_system_message(error_message)
+            
+            return error_message
+            
+    def clear_history(self):
+        """
+        Очищает историю диалога
+        """
+        self.memory.clear_history()
+        logger.info("История диалога очищена")
+        return "История диалога очищена"

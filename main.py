@@ -30,28 +30,43 @@ def console_input(gemini_console):
         os.system('cls' if os.name == 'nt' else 'clear')  # Очистка экрана
         print("\n=== Gemini Console (gemini-2.0-flash) ===")
         print("Введите сообщение и нажмите Enter для отправки.")
-        print("Нажмите F7 в любой момент для захвата скриншота (можно несколько раз).")
+        print("Горячие клавиши:")
+        print("  F7 - захватить скриншот (можно несколько раз)")
         print("Скриншоты будут отправлены вместе с текстом после нажатия Enter.")
-        print("Введите 'exit' или 'quit' для выхода.")
+        print("Специальные команды:")
+        print("  /clear - очистить историю диалога")
+        print("  /exit, /quit или exit, quit - выход из программы")
         print("=====================================\n")
 
-        # Добавляем обработчик клавиши F7
-        def on_f7_press(e):
+        # Проверяем, есть ли история диалога
+        history_count = gemini_console.memory.get_user_message_count()
+        if history_count > 0:
+            print(f"[Загружена история диалога: {history_count} сообщений]")
+
+        # Добавляем обработчики клавиш
+        def on_key_press(e):
             if e.name == "f7":
                 gemini_console.capture_screenshot()
                 print("\n[Скриншот получен и будет отправлен с сообщением. Продолжайте ввод...]", end="\nВы: ", flush=True)
+
         
-        # Регистрируем обработчик клавиши
-        keyboard.on_press(on_f7_press)
+        # Регистрируем обработчик клавиш
+        keyboard.on_press(on_key_press)
         
         while True:
             # Получаем ввод от пользователя
             user_input = input("\nВы: ")
             
             # Проверяем команду выхода
-            if user_input.lower() in ['exit', 'quit', 'выход']:
+            if user_input.lower() in ['exit', 'quit', 'выход', '/exit', '/quit']:
                 print("Завершение работы...")
                 break
+                
+            # Проверяем команду очистки истории
+            if user_input.lower() == '/clear':
+                response = gemini_console.clear_history()
+                print(f"\nСистема: {response}")
+                continue
             
             # Отправляем сообщение со всеми накопленными скриншотами
             print("\nGemini: ", end="", flush=True)

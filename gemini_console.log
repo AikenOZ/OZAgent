@@ -1,2 +1,83 @@
 2025-03-10 00:58:32,992 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
 2025-03-10 00:58:34,820 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:25:17,547 - GeminiConsole - ERROR - Ошибка при загрузке истории диалога: Expecting value: line 1 column 1 (char 0)
+2025-03-10 01:25:17,548 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:25:19,337 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:25:20,259 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:25:24,570 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:25:25,116 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:25:33,100 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:25:33,646 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:25:41,484 - GeminiConsole - INFO - Скриншот экрана получен и добавлен в очередь (всего: 1)
+2025-03-10 01:25:45,573 - GeminiConsole - INFO - Отправка запроса в Gemini с 1 изображениями
+2025-03-10 01:25:51,803 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:28:44,322 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:28:44,322 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:29:14,808 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:29:14,809 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:29:30,287 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:29:30,287 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:29:34,715 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:29:35,808 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:29:55,589 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:29:55,589 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:30:48,127 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:30:48,127 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:30:49,730 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:30:49,730 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:30:55,157 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:30:56,253 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:30:59,424 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:30:59,972 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:31:06,307 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:31:06,308 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:31:09,735 - GeminiConsole - ERROR - Неожиданная ошибка: [WinError 6] Неверный дескриптор
+2025-03-10 01:32:18,538 - GeminiConsole - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:32:18,539 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:32:21,643 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:32:21,644 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:32:31,805 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:32:32,910 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:33:10,147 - GeminiConsole - INFO - Скриншот экрана получен и добавлен в очередь (всего: 1)
+2025-03-10 01:33:15,259 - GeminiConsole - INFO - Отправка запроса в Gemini с 1 изображениями
+2025-03-10 01:33:17,830 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:33:45,409 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:33:46,169 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:33:48,420 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:33:48,967 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:33:49,078 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:33:49,656 - GeminiConsole - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:36:10,791 - GeminiConsole.Memory - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:36:10,791 - GeminiConsole.Memory - INFO - Контроллер памяти инициализирован. Путь к файлу памяти: o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:36:10,791 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:36:10,898 - GeminiConsole - ERROR - Неожиданная ошибка: 'GeminiConsole' object has no attribute 'conversation_history'
+2025-03-10 01:36:51,767 - GeminiConsole.Memory - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:36:51,767 - GeminiConsole.Memory - INFO - Контроллер памяти инициализирован. Путь к файлу памяти: o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:36:51,767 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:37:10,966 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:10,966 - GeminiConsole.Memory - INFO - История диалога очищена
+2025-03-10 01:37:10,967 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:37:14,671 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:14,673 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:37:15,671 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:43,179 - GeminiConsole.Memory - INFO - История диалога загружена из o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:43,179 - GeminiConsole.Memory - INFO - Контроллер памяти инициализирован. Путь к файлу памяти: o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:43,179 - GeminiConsole - INFO - Консоль Gemini инициализирована с моделью gemini-2.0-flash
+2025-03-10 01:37:50,477 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:50,477 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:37:51,460 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:57,733 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:37:57,734 - GeminiConsole - INFO - Отправка запроса в Gemini без изображений
+2025-03-10 01:37:58,281 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:38:01,107 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:38:01,108 - GeminiConsole.Memory - INFO - История диалога очищена
+2025-03-10 01:38:01,108 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:38:03,099 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:38:03,099 - GeminiConsole.Memory - INFO - История диалога очищена
+2025-03-10 01:38:03,100 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:38:03,285 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:38:03,285 - GeminiConsole.Memory - INFO - История диалога очищена
+2025-03-10 01:38:03,285 - GeminiConsole - INFO - История диалога очищена
+2025-03-10 01:38:03,419 - GeminiConsole.Memory - INFO - История диалога сохранена в o:\OZ\AI\OZAgent\memory\memory.json
+2025-03-10 01:38:03,419 - GeminiConsole.Memory - INFO - История диалога очищена
+2025-03-10 01:38:03,420 - GeminiConsole - INFO - История диалога очищена
